@@ -1,0 +1,85 @@
+{
+  "paper": "Sound Evidence: A Unified Evidence Framework for Audio Forensics",
+  "submission": "AAAI 2027 / 11704",
+  "scope": "original formal core far_full; excludes matched-semantic/rebuttal models",
+  "bindings": [
+    {
+      "source_relative_path": "scripts/run_cps_factorial_pilot.py",
+      "candidate_path": "src/sound_evidence/_core.py",
+      "sha256": "6a699554508785344653d0b8b20446e7a08e1fbb940cf39a078391f5f367cc20",
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "source_relative_path": "results/cps_factorial_v2/formal_144sources_seed20260714_common_trim_v1/task_models_v2/far_full_seed20260713/best_model.pt",
+      "candidate_path": "models/far_full_seed20260713.pt",
+      "sha256": "07c66b0356e15a9505288931d051432dffbf271299c0d349a8070163e8555799",
+      "bytes": 11895891,
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "source_relative_path": "results/cps_factorial_v2/formal_144sources_seed20260714_common_trim_v1/task_models_v2/far_full_seed20260713/run_config.json",
+      "source_sha256": "f99d1584b0c08937ec8fbf7630b8eaa9d617f343e107743ab7307fd0d9f3b161",
+      "candidate_path": "models/far_full_seed20260713.json",
+      "sha256": "ef8eb1123baa9ce0da54011b3928ead3e2728bffc737f436b443b645f50a2229",
+      "transformation": "preserved scalar settings; removed three machine paths; added source-relative identifier, schema and checkpoint hash"
+    },
+    {
+      "source_relative_path": "results/cps_factorial_v2/formal_144sources_seed20260714_common_trim_v1/task_models_v2/far_full_seed20260714/best_model.pt",
+      "candidate_path": "models/far_full_seed20260714.pt",
+      "sha256": "b562e7ea015c8948abaca7cad81515b449666c5791a5c649660c3a0b2e43ecab",
+      "bytes": 11895891,
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "source_relative_path": "results/cps_factorial_v2/formal_144sources_seed20260714_common_trim_v1/task_models_v2/far_full_seed20260714/run_config.json",
+      "source_sha256": "366c3582b022470dbdce81a5febb632306db4ff7231441dca98abea656bd2c9d",
+      "candidate_path": "models/far_full_seed20260714.json",
+      "sha256": "17e4f8373e935a0068588ad5a50000ce3bf92c915b3d538e752a7c4522a0e9a0",
+      "transformation": "preserved scalar settings; removed three machine paths; added source-relative identifier, schema and checkpoint hash"
+    },
+    {
+      "source_relative_path": "results/cps_factorial_v2/formal_144sources_seed20260714_common_trim_v1/task_models_v2/far_full_seed20260715/best_model.pt",
+      "candidate_path": "models/far_full_seed20260715.pt",
+      "sha256": "ce1c8abb82fabdc99a154a2274977be2625d47c4c8851f37cd012659c887a1e4",
+      "bytes": 11895891,
+      "transformation": "none; byte-identical copy"
+    },
+    {
+      "source_relative_path": "results/cps_factorial_v2/formal_144sources_seed20260714_common_trim_v1/task_models_v2/far_full_seed20260715/run_config.json",
+      "source_sha256": "6f7f6409673ce9d31bdda19011f3d215bd1f52d26bb01cf1b66991760d99b0eb",
+      "candidate_path": "models/far_full_seed20260715.json",
+      "sha256": "8892fcfdad88c74194ac78fe563e56eea8bdb184a37336f045ed4777ce1a5cac",
+      "transformation": "preserved scalar settings; removed three machine paths; added source-relative identifier, schema and checkpoint hash"
+    },
+    {
+      "source_relative_path": "tests/test_run_cps_factorial_pilot.py",
+      "source_sha256": "f5e1ae9995d67d2f5e33249d1bbfbbcf283b05c0c0c73ff360c581f2a0cf48ba",
+      "candidate_path": "tests/test_registered_core.py",
+      "sha256": "700b4419801a5c7b7c639cb10e7681e59ecc96480bd3a4cf05534253a5415dbb",
+      "transformation": "only test import target adapted to installed package; scientific assertions unchanged"
+    }
+  ],
+  "wrapper_files": [
+    "src/sound_evidence/runtime.py",
+    "src/sound_evidence/cli.py",
+    "src/sound_evidence/outputs.py"
+  ],
+  "config_policy": "paired inference configs preserve original scalar settings, replace paths with source-relative identifiers and add checkpoint hash",
+  "wrapper_bindings": [
+    {
+      "candidate_path": "src/sound_evidence/runtime.py",
+      "sha256": "5ece026229c031d22175caee72a68a0ef965a3aa95996b5f3c9e8bf4dfff5905",
+      "origin": "release wrapper; original mathematical core unchanged"
+    },
+    {
+      "candidate_path": "src/sound_evidence/cli.py",
+      "sha256": "ed5359cb33d78b6b3e0d4a68d75e4e092247d82b1918b1de03091975c30b31c4",
+      "origin": "release wrapper; original mathematical core unchanged"
+    },
+    {
+      "candidate_path": "src/sound_evidence/outputs.py",
+      "sha256": "b517a2c0a64dd150f50b7318ae11e750bca0245be640a114b2fbc3d304bb0e78",
+      "origin": "release wrapper; original mathematical core unchanged"
+    }
+  ]
+}

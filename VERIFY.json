@@ -1,0 +1,163 @@
+{
+  "candidate": "sound-evidence",
+  "verified_on": "2026-10-26",
+  "status": "core_candidate_verified",
+  "paper": "Sound Evidence: A Unified Evidence Framework for Audio Forensics",
+  "submission": "AAAI 2027 / 11704",
+  "environment": {
+    "python": "3.13.5",
+    "platform": "Windows",
+    "execution_device": "cpu",
+    "observed_dependency_closure": {
+      "pytest": "8.3.4",
+      "pluggy": "1.5.0",
+      "packaging": "24.2",
+      "iniconfig": "1.1.1",
+      "colorama": "0.4.6",
+      "scikit-learn": "1.6.1",
+      "threadpoolctl": "3.5.0",
+      "joblib": "1.4.2",
+      "scipy": "1.15.3",
+      "numpy": "2.1.3",
+      "soundfile": "0.14.0",
+      "typing-extensions": "4.15.0",
+      "cffi": "2.0.0",
+      "pycparser": "2.21",
+      "torchaudio": "2.9.1+cu128",
+      "torch": "2.9.1+cu128",
+      "setuptools": "72.1.0",
+      "fsspec": "2025.3.2",
+      "jinja2": "3.1.6",
+      "markupsafe": "3.0.2",
+      "networkx": "3.4.2",
+      "sympy": "1.14.0",
+      "mpmath": "1.3.0",
+      "filelock": "3.17.0"
+    },
+    "dependency_file": "requirements-tested.txt"
+  },
+  "tests": {
+    "command": "python -m pytest tests -q -p no:cacheprovider",
+    "passed": 31,
+    "failed": 0,
+    "seconds": 3.82,
+    "registered_scientific_tests": 16,
+    "release_integration_tests": 15
+  },
+  "checks": {
+    "wheel_build_and_target_install": {
+      "passed": true,
+      "package": "sound-evidence-core==0.1.0",
+      "wheel_sha256": "bb0713b51f443b5f83b04c8320751b442a10c362348f0311bb58692dbf397282",
+      "mode": "pip --target --no-deps --no-build-isolation; dependencies already installed",
+      "installed_import_origin_confirmed": true
+    },
+    "installed_cli_demo": {
+      "passed": true,
+      "checkpoint_seed": 20260713,
+      "samples": 2,
+      "embedding_shape": [
+        2,
+        256
+      ],
+      "M_probability_shape": [
+        2,
+        2
+      ],
+      "C_probability_shape": [
+        2,
+        3
+      ],
+      "artifact": "examples/demo-output/predictions.npz",
+      "audio_kind": "deterministic synthetic signals"
+    },
+    "formal_evaluation_interface_smoke": {
+      "passed": true,
+      "samples": 36,
+      "relation_pairs": 36,
+      "splits": [
+        "train",
+        "dev",
+        "test"
+      ],
+      "queries": [
+        "M",
+        "C",
+        "R"
+      ],
+      "scope": "synthetic metadata fixture; verifies full-grid export/probe code path, no scientific accuracy claim",
+      "undefined_single_class_segment_metrics": "null; strict JSON parse passed"
+    },
+    "portable_training_validate_only": {
+      "passed": true,
+      "samples": 36,
+      "training_steps_executed": 0
+    },
+    "source_parity": {
+      "core_byte_identical_to_original": true,
+      "original_source_vs_installed_max_absolute_error": {
+        "embeddings": 0.0,
+        "M_logits": 0.0,
+        "C_logits": 0.0
+      },
+      "checkpoint_seeds_strictly_loaded_on_cpu": [
+        20260713,
+        20260714,
+        20260715
+      ]
+    },
+    "privacy_text_scan": {
+      "passed": true,
+      "violations": [],
+      "scope": "candidate text/config files"
+    },
+    "model_assets": {
+      "count": 3,
+      "bytes_total": 35687673,
+      "hashes": [
+        {
+          "source_relative_path": "results/cps_factorial_v2/formal_144sources_seed20260714_common_trim_v1/task_models_v2/far_full_seed20260713/best_model.pt",
+          "candidate_path": "models/far_full_seed20260713.pt",
+          "sha256": "07c66b0356e15a9505288931d051432dffbf271299c0d349a8070163e8555799",
+          "bytes": 11895891,
+          "transformation": "none; byte-identical copy"
+        },
+        {
+          "source_relative_path": "results/cps_factorial_v2/formal_144sources_seed20260714_common_trim_v1/task_models_v2/far_full_seed20260714/best_model.pt",
+          "candidate_path": "models/far_full_seed20260714.pt",
+          "sha256": "b562e7ea015c8948abaca7cad81515b449666c5791a5c649660c3a0b2e43ecab",
+          "bytes": 11895891,
+          "transformation": "none; byte-identical copy"
+        },
+        {
+          "source_relative_path": "results/cps_factorial_v2/formal_144sources_seed20260714_common_trim_v1/task_models_v2/far_full_seed20260715/best_model.pt",
+          "candidate_path": "models/far_full_seed20260715.pt",
+          "sha256": "ce1c8abb82fabdc99a154a2274977be2625d47c4c8851f37cd012659c887a1e4",
+          "bytes": 11895891,
+          "transformation": "none; byte-identical copy"
+        }
+      ]
+    },
+    "output_protection": {
+      "passed": true,
+      "directory_commands": "demo/make-demo/evaluate reject every existing destination, even empty directories",
+      "predict": "rejects existing NPZ or JSON sidecar; writes exclusively and removes own partial files on write failure",
+      "failed_input_cleanup": "demo staging and invalid-evaluation tests pass; no incomplete result directory remains",
+      "formal_evaluation_after_staging_change": "36 synthetic sample rows and 36 relation pairs completed; same frozen-embedding SHA256 as before staging"
+    }
+  },
+  "source_bindings": "SOURCE_BINDINGS.json",
+  "known_limits": [
+    "No full-data benchmark, GPU training or CUDA inference was rerun.",
+    "Only Windows/Python 3.13.5 with the observed dependencies was exercised; Linux and other Python versions are untested.",
+    "Target installation reused existing dependency packages; a fresh complete dependency installation was not exercised.",
+    "The package covers the original CPSFactorial-v2 core and its native M/C heads plus fixed M/C/R probes, not every public endpoint or separate Path-Chg/Chain-Ver registration.",
+    "No third-party dataset recordings, generators or downloaders are bundled; users need compatible controlled audio and full original manifest fields for training/evaluation.",
+    "The synthetic example and formal smoke fixture carry no forensic accuracy claim.",
+    "Original source has module-level factor state; differing concurrent factor registries require separate processes.",
+    "Author selection of source and checkpoint licenses remains pending; NOTICE grants no new license."
+  ],
+  "original_project_modified": false,
+  "remote_servers_modified": false,
+  "uploaded": false
+}

@@ -1,0 +1,14 @@
+Sound Evidence: A Unified Evidence Framework for Audio Forensics
+Authors listed on the submission: Ze Yu, Haiwei Wu, Gao Chang, Yuanman Li,
+Jiantao Zhou. Research source and supplied checkpoints belong to their
+respective rights holders. This candidate does not choose or grant an open
+source license. The authors must select the source-code and checkpoint
+licenses before public release. No third-party dataset recordings are bundled.
+
+The registered CPSFactorial-v2 implementation is preserved byte-for-byte in
+src/sound_evidence/_core.py. New runtime/CLI wrappers provide packaging,
+checkpoint-schema loading and portable paths; they do not change that file.
+SOURCE_BINDINGS.json records source-relative identifiers and content hashes.
+The three bundled far_full checkpoints are from the original formal core
+matrix, not later same-semantics or rebuttal reruns. Generated demo audio is
+mathematical test material with no claimed forensic ground truth.

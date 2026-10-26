@@ -1,0 +1,13 @@
+# Preserve source/checkpoint bytes: provenance hashes include line endings.
+* -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.safetensors filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
+*.joblib filter=lfs diff=lfs merge=lfs -text
+*.npz filter=lfs diff=lfs merge=lfs -text
+*.npy filter=lfs diff=lfs merge=lfs -text
+*.snapshot.json filter=lfs diff=lfs merge=lfs -text
+*_core.json filter=lfs diff=lfs merge=lfs -text
+models/submission_k2.json filter=lfs diff=lfs merge=lfs -text
+models/strict_k2.json filter=lfs diff=lfs merge=lfs -text

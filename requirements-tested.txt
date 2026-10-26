@@ -1,0 +1,28 @@
+# Exact active dependency closure observed on Windows / Python 3.13.5.
+# Verification used CPU; the installed Torch wheels carried the cu128 tag.
+# This environment-specific file is not a cross-platform solver lock.
+--extra-index-url https://download.pytorch.org/whl/cu128
+cffi==2.0.0
+colorama==0.4.6
+filelock==3.17.0
+fsspec==2025.3.2
+iniconfig==1.1.1
+jinja2==3.1.6
+joblib==1.4.2
+markupsafe==3.0.2
+mpmath==1.3.0
+networkx==3.4.2
+numpy==2.1.3
+packaging==24.2
+pluggy==1.5.0
+pycparser==2.21
+pytest==8.3.4
+scikit-learn==1.6.1
+scipy==1.15.3
+setuptools==72.1.0
+soundfile==0.14.0
+sympy==1.14.0
+threadpoolctl==3.5.0
+torch==2.9.1+cu128
+torchaudio==2.9.1+cu128
+typing-extensions==4.15.0
