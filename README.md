@@ -1,5 +1,13 @@
 # Sound Evidence — FAR factorial core candidate
 
+## Public release candidate
+
+`v0.1.0-rc1` publishes the tested core code and companion model/state assets.
+The locally executed checks and coverage limits are recorded in `VERIFY.json`
+and below; complete raw-data-to-paper-table reproduction is not claimed.
+License status is recorded in `NOTICE`.
+
+
 This repository packages the **FactorialAudioCnn / FAR core** of *Sound Evidence:
 A Unified Evidence Framework for Audio Forensics* (AAAI 2027 submission 11704).
 It includes the actual registered network, FAR losses, source-group cropping,

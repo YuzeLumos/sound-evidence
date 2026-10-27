@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-27",
+  "release": "v0.1.0-rc1",
+  "status": "public-core-release-candidate",
+  "repository_id": 1435283371,
+  "repository_full_name": "YuzeLumos/sound-evidence",
+  "repository_url": "https://github.com/YuzeLumos/sound-evidence",
+  "visibility": "public",
+  "scope_and_validation": "VERIFY.json",
+  "license_status": "NOTICE"
+}

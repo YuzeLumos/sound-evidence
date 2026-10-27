@@ -1,6 +1,6 @@
 # Git and model artifacts
 
-This candidate has a local Git history on branch `main`. Model weights, fitted
+This repository uses branch `main` and the candidate tag `v0.1.0-rc1`. Model weights, fitted
 state arrays and response fixtures use Git LFS. After cloning a hosted version:
 
 ```sh
@@ -16,5 +16,5 @@ complete delivered file set, excluding itself and `.git/`.
 Source and data hashes deliberately preserve original line endings. Do not
 automatically normalize archived source files or frozen evidence. Source
 bindings and original experiment contracts remain provenance, while the README
-documents portable runtime interfaces. No remote repository or public license
-grant is implied by this local candidate.
+documents portable runtime interfaces. The public repository is identified in `PUBLICATION.json`; no new license
+grant is implied by the candidate label.

@@ -1,7 +1,7 @@
 {
   "schema": "paper-candidate-release-manifest-v1",
   "candidate": "sound-evidence",
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "artifacts": [
     {
       "path": ".gitattributes",
@@ -45,8 +45,8 @@
     },
     {
       "path": "GIT_STORAGE.md",
-      "bytes": 862,
-      "sha256": "c81749f4d8c5cf1fbf20f47bcc3e16e1b4ccbbb258e0c666067968437ec17abd"
+      "bytes": 910,
+      "sha256": "b595e256ed631462b87dac76df7f37d3a2a3475587337ccf75c3f8438e8e6907"
     },
     {
       "path": "models/far_full_seed20260713.json",
@@ -84,14 +84,19 @@
       "sha256": "1caa93d635e7a20a793149a155d667016f81a767a9aa738224692bc1ceebfc3c"
     },
     {
+      "path": "PUBLICATION.json",
+      "bytes": 348,
+      "sha256": "0704fda3dd8856ca5f43628acfb702191cfcddcfcb600e6fdec46a81125f23f3"
+    },
+    {
       "path": "pyproject.toml",
       "bytes": 650,
       "sha256": "9481d318ca591089ef93888a3d18a37baafed70fef847a7f7f339f06c4593f16"
     },
     {
       "path": "README.md",
-      "bytes": 6040,
-      "sha256": "b9576285099b8265e6ba271f9270750720c218e911011e2d85097d96f9767011"
+      "bytes": 6340,
+      "sha256": "0079fae48bd5be34be82650cdc839769c26803b97a242e34d43f8204c8ece6ab"
     },
     {
       "path": "requirements-tested.txt",
