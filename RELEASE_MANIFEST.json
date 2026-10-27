@@ -2,6 +2,7 @@
   "schema": "paper-candidate-release-manifest-v1",
   "candidate": "sound-evidence",
   "date": "2026-10-27",
+  "scope": "Git-tracked distribution files; generated demo-output directories are produced by the CLI and not shipped.",
   "artifacts": [
     {
       "path": ".gitattributes",
@@ -14,39 +15,34 @@
       "sha256": "60a56e4ae17446ac346180a1fb083a300e4612cd80a004e87358bd8af4fac7ee"
     },
     {
-      "path": "examples/demo-output/audio/ABOUT.json",
-      "bytes": 146,
-      "sha256": "5948cb2c37a2ecf3afe013c2b0f7cad1e964aefd30c3ce3087bf0e185039f2b7"
-    },
-    {
-      "path": "examples/demo-output/audio/samples.jsonl",
-      "bytes": 168,
-      "sha256": "e263a8afddfb808cd63374db16260c650b50bb4d9265be9ba0d6eb70ca4d0fba"
-    },
-    {
-      "path": "examples/demo-output/audio/signal_0.wav",
-      "bytes": 204044,
-      "sha256": "0bda0f06eb5c7a2551cebc26d57e25858249d4cac137f5e6b36ff7f2943471fd"
-    },
-    {
-      "path": "examples/demo-output/audio/signal_1.wav",
-      "bytes": 204044,
-      "sha256": "2b7ca66c77aaea132dafd5f6cacb2921f72bd93978655de695863b5b77e8fb3d"
-    },
-    {
-      "path": "examples/demo-output/predictions.json",
-      "bytes": 515,
-      "sha256": "54b56909839e083a5aa1bf52cdcc02f5334034d82d625cf7a3b5dfe2a0ce5fd9"
-    },
-    {
-      "path": "examples/demo-output/predictions.npz",
-      "bytes": 5885,
-      "sha256": "a742a0f0ccb767645e7c8e0b64ea2ddcf1e71c2917efed0c0020db6eb0b9da41"
-    },
-    {
       "path": "GIT_STORAGE.md",
       "bytes": 910,
-      "sha256": "b595e256ed631462b87dac76df7f37d3a2a3475587337ccf75c3f8438e8e6907"
+      "sha256": "2b84321877f6702e5de3ee9c567b732e60d2d1bc21300bea3086302d95d86e05"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 955,
+      "sha256": "1caa93d635e7a20a793149a155d667016f81a767a9aa738224692bc1ceebfc3c"
+    },
+    {
+      "path": "PUBLICATION.json",
+      "bytes": 439,
+      "sha256": "6801f67f2f0534c53b6d6653212a77f1f63222ad85dd2c70879bdc61bdb0c977"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6340,
+      "sha256": "ba885f3d1e19fbae39f7c5de3281e7b0cb23870af9b276d6e7ae2253286e1942"
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "bytes": 4809,
+      "sha256": "7bdd2f1c7ad734a54afae5a3139e1f82f2ca3d6fe2e8ca78ee70774c1ae99025"
+    },
+    {
+      "path": "VERIFY.json",
+      "bytes": 6357,
+      "sha256": "389fdbdddc2ab46f03440a8e554a4abf999efa00dc039f7c24185768f49520aa"
     },
     {
       "path": "models/far_full_seed20260713.json",
@@ -79,34 +75,14 @@
       "sha256": "ce1c8abb82fabdc99a154a2274977be2625d47c4c8851f37cd012659c887a1e4"
     },
     {
-      "path": "NOTICE",
-      "bytes": 955,
-      "sha256": "1caa93d635e7a20a793149a155d667016f81a767a9aa738224692bc1ceebfc3c"
-    },
-    {
-      "path": "PUBLICATION.json",
-      "bytes": 348,
-      "sha256": "0704fda3dd8856ca5f43628acfb702191cfcddcfcb600e6fdec46a81125f23f3"
-    },
-    {
       "path": "pyproject.toml",
       "bytes": 650,
       "sha256": "9481d318ca591089ef93888a3d18a37baafed70fef847a7f7f339f06c4593f16"
     },
     {
-      "path": "README.md",
-      "bytes": 6340,
-      "sha256": "0079fae48bd5be34be82650cdc839769c26803b97a242e34d43f8204c8ece6ab"
-    },
-    {
       "path": "requirements-tested.txt",
       "bytes": 704,
       "sha256": "923ed418663bb15366e23570c633a91b74005985787d27a4399d48ed896e8ec3"
-    },
-    {
-      "path": "SOURCE_BINDINGS.json",
-      "bytes": 4809,
-      "sha256": "7bdd2f1c7ad734a54afae5a3139e1f82f2ca3d6fe2e8ca78ee70774c1ae99025"
     },
     {
       "path": "src/sound_evidence/__init__.py",
@@ -147,11 +123,6 @@
       "path": "tests/test_release_runtime.py",
       "bytes": 7067,
       "sha256": "8c767744fad4790bfe73a8b8c2285c96147d6b6f732814f5183a0339fb45fc83"
-    },
-    {
-      "path": "VERIFY.json",
-      "bytes": 6357,
-      "sha256": "389fdbdddc2ab46f03440a8e554a4abf999efa00dc039f7c24185768f49520aa"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # Git and model artifacts
 
-This repository uses branch `main` and the candidate tag `v0.1.0-rc1`. Model weights, fitted
+This repository uses branch `main` and the candidate tag `v0.1.0-rc2`. Model weights, fitted
 state arrays and response fixtures use Git LFS. After cloning a hosted version:
 
 ```sh
